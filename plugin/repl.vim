@@ -66,7 +66,6 @@ endfunction
 function! s:ReplSendToWindow(type, direction)
   if a:type == "line"
     normal! yy
-    " normal! j
   else
     keepjumps normal! `<v`>y']
   endif
