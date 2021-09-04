@@ -82,7 +82,7 @@ endfunction
 function! s:ReplSendRight(type)
   call s:ReplSendToWindow(a:type, 'l')
 endfunction
-"
+
 " Send text the window below.
 function! s:ReplSendDown(type)
   call s:ReplSendToWindow(a:type, 'j')
