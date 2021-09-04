@@ -68,5 +68,5 @@ endfunction
 " Use Ctrl-p to open terminal.
 nnoremap <silent> <C-p> :call StartTermBelow()<CR>
 
-" Use Ctrl-h to source a file, if possible.
-nnoremap <silent> <C-h> :call SourceFile()<cr>
+" Use Ctrl-y to source a file, if possible.
+nnoremap <silent> <C-y> :call SourceFile()<cr>
