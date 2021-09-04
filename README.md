@@ -29,6 +29,7 @@ Command                                          | Action
 `Ctrl-j` on a visual selection of multiple lines | send the selected lines to REPL below
 `Ctrl-k` on a visual selection of multiple lines | send the selected lines to REPL above
 `Ctrl-l` on a visual selection of multiple lines | send the selected lines to REPL on right
+`Ctrl-y` anywhere in file                        | source the file (language is supported)
 
 Note that though the intended usage is for REPLs, you can actually send lines from the REPL back 
 to the editors using the same commands. I.e., if you are in the REPL and do `Ctrl-j` at a line,
