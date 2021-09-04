@@ -56,7 +56,7 @@ function! s:ReplSourceFile()
     normal! "kp
     exec "wincmd p"
   else
-    " %call LineFeederNextLine()
+    " %call s:ReplSendDown("line")
     " TODO:
     echo "No implementation for extention: ." . ext
   endif
@@ -66,7 +66,7 @@ endfunction
 function! s:ReplSendToWindow(type, direction)
   if a:type == "line"
     normal! yy
-    normal! j
+    " normal! j
   else
     keepjumps normal! `<v`>y']
   endif
@@ -95,8 +95,9 @@ nnoremap <silent> <Plug>ReplSourceFile :<C-U> call <SID>ReplSourceFile()<CR>
 nmap <C-k> <Plug>ReplStartTermBelow<CR>
 nmap <C-h> <Plug>ReplSourceFile<CR>
 
-nnoremap <silent> <Plug>ReplSendDown :<C-U> set operatorfunc=<SID>ReplSendDown<CR>g@
-nnoremap <silent> <Plug>ReplSendRight :<C-U> set operatorfunc=<SID>ReplSendRight<CR>g@
+" NOTE: The g@ is confusing. See what happens when you do `g@ + j` in vi.
+nnoremap <silent> <Plug>ReplSendDown :<C-U> call <SID>ReplSendDown('line')<CR>
+nnoremap <silent> <Plug>ReplSendRight :<C-U> call <SID>ReplSendRight('line')<CR>
 vnoremap <silent> <Plug>ReplSendDownV :<C-U> call <SID>ReplSendDown(visualmode())<CR>
 vnoremap <silent> <Plug>ReplSendRightV :<C-U> call <SID>ReplSendRight(visualmode())<CR>
 
