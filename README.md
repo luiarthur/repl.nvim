@@ -18,17 +18,30 @@ A basic REPL launcher for NeoVIM.
 
 From a vim buffer (file), you can do the following in `Normal` mode.
 
-Command                                          | Action
------------------------------------------------- | ----------------------------------------
-`Ctrl-k`                                         | start REPL (see above)
-`Ctrl-h` anywhere in file                        | source the file (language is supported)
-`Ctrl-j` on a line                               | send current line to REPL below
-`Ctrl-l` on a line                               | send current line to REPL on right
-`Ctrl-j` on a visual selection of multiple lines | send the selected lines to REPL below
-`Ctrl-l` on a visual selection of multiple lines | send the selected lines to REPL on right
+Action                                   | Command
+---------------------------------------- |------------------------------------------------ 
+Start REPL (see above)                   |`Ctrl-k`
+Source the file (language is supported)  |`Ctrl-h` anywhere in file
+Send current line to REPL below          |`Ctrl-j` on a line
+Send current line to REPL on right       |`Ctrl-l` on a line
+Send the selected lines to REPL below    |`Ctrl-j` on a visual selection of multiple lines 
+Send the selected lines to REPL on right |`Ctrl-l` on a visual selection of multiple lines 
 
 Note that the REPL (and buffers) will be in `Normal` mode, but lines from the
 buffer will be executed in the REPLs.
+
+The default key-bindings can be remapped. For example, the default bindings are
+defined as follows:
+
+Action                                   | Default key-binding
+---------------------------------------- |------------------------------------------------ 
+Start REPL                               | `nmap <C-k> <Plug>ReplStartTermBelow<CR>`
+Source the file                          | `nmap <C-h> <Plug>ReplSourceFile<CR>`
+Send current line to REPL below          | `nmap <C-j> <Plug>ReplSendDown<CR>`
+Send current line to REPL on right       | `nmap <C-l> <Plug>ReplSendRight<CR>`
+Send the selected lines to REPL below    | `xmap <C-j> <Plug>ReplSendDownV`
+Send the selected lines to REPL on right | `xmap <C-l> <Plug>ReplSendRightV`
+
 
 ## Supported Languages
 - Julia (`*.jl`)
