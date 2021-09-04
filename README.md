@@ -17,13 +17,14 @@ A basic REPL launcher for NeoVIM.
 ## Navigation
 
 From a vim buffer (file), you can do the following in `Normal` mode.
-   Command   |     Action
------------- | -------------
-`Ctrl-p`     | start REPL (see above)
-`Ctrl-h` on a line | send current line to REPL on left
-`Ctrl-j` on a line | send current line to REPL below
-`Ctrl-k` on a line | send current line to REPL above
-`Ctrl-l` on a line | send current line to REPL on right
+
+Command                                          | Action
+------------------------------------------------ | ----------------------------------------
+`Ctrl-p`                                         | start REPL (see above)
+`Ctrl-h` on a line                               | send current line to REPL on left
+`Ctrl-j` on a line                               | send current line to REPL below
+`Ctrl-k` on a line                               | send current line to REPL above
+`Ctrl-l` on a line                               | send current line to REPL on right
 `Ctrl-h` on a visual selection of multiple lines | send the selected lines to REPL on left
 `Ctrl-j` on a visual selection of multiple lines | send the selected lines to REPL below
 `Ctrl-k` on a visual selection of multiple lines | send the selected lines to REPL above
