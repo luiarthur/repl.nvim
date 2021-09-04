@@ -1,3 +1,7 @@
+" Plugin: repl.vim/plugin/repl_start.vim
+" Author: Arthur Lui
+" Dependencies: NeoVIM 0.5+
+
 " Starts a terminal (possibly with a REPL if extension is recognized), below
 " the script.
 function! StartTermBelow()
@@ -65,8 +69,8 @@ endfunction
 
 " ------------- Keyboard shortcuts. ---------------
 
-" Use Ctrl-p to open terminal.
-nnoremap <silent> <C-p> :call StartTermBelow()<CR>
+" Use Ctrl-k to open terminal.
+nnoremap <silent> <C-k> :call StartTermBelow()<CR>
 
-" Use Ctrl-y to source a file, if possible.
-nnoremap <silent> <C-y> :call SourceFile()<cr>
+" Use Ctrl-h to source a file, if possible.
+nnoremap <silent> <C-h> :call SourceFile()<cr>
