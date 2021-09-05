@@ -97,8 +97,8 @@ nmap <C-h> <Plug>ReplSourceFile<CR>
 " NOTE: The g@ is confusing. See what happens when you do `g@ + j` in vi.
 nnoremap <silent> <Plug>ReplSendDown :<C-U> call <SID>ReplSendDown('line')<CR>
 nnoremap <silent> <Plug>ReplSendRight :<C-U> call <SID>ReplSendRight('line')<CR>
-vnoremap <silent> <Plug>ReplSendDownV :<C-U> call <SID>ReplSendDown(visualmode())<CR>
-vnoremap <silent> <Plug>ReplSendRightV :<C-U> call <SID>ReplSendRight(visualmode())<CR>
+xnoremap <silent> <Plug>ReplSendDownV :<C-U> call <SID>ReplSendDown(visualmode())<CR>
+xnoremap <silent> <Plug>ReplSendRightV :<C-U> call <SID>ReplSendRight(visualmode())<CR>
 
 nmap <C-l> <Plug>ReplSendRight<CR>
 xmap <C-l> <Plug>ReplSendRightV
