@@ -4,6 +4,9 @@ A basic REPL launcher for NeoVIM.
 ## Dependencies
 - NeoVIM 0.5+
 
+## Installation
+TODO
+
 ## Usage
 1. Open a file in NeoVIM 0.5+
 2. In `Normal` mode, type `Ctrl-k`. If the file extension is of a supported
@@ -42,6 +45,8 @@ Send current line to REPL on right       | `nmap <C-l> <Plug>ReplSendRight<CR>`
 Send the selected lines to REPL below    | `xmap <C-j> <Plug>ReplSendDownV`
 Send the selected lines to REPL on right | `xmap <C-l> <Plug>ReplSendRightV`
 
+Default key bindings will be used if either `let g:repl_default_key_bindings = 1` is invoked
+in `init.vim` OR `g:repl_default_key_bindings` is not defined.
 
 ## Supported Languages
 - Julia (`*.jl`)
