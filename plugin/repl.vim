@@ -56,9 +56,10 @@ function! s:ReplSourceFile()
     normal! "kp
     exec "wincmd p"
   else
-    " %call s:ReplSendDown("line")
-    " TODO:
-    echo "No implementation for extention: ." . ext
+    let lineByLine = confirm("No kernel for `." . ext . "`. Run line by line?",  "&Yes\n&No")
+    if lineByLine == 1
+      %call s:ReplSendDown("line")
+    endif
   endif
 endfunction
 
