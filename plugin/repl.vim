@@ -12,7 +12,7 @@ function! s:ReplStartTermBelow()
   let repl_dict = {
     \"R": "R",
     \"jl": "julia",
-    \"py": "python3"
+    \"py": "ipython --no-autoindent"
   \}
 
   " The third argument is the default value of the REPL to be executed (which
@@ -72,8 +72,7 @@ function! s:ReplSendToWindow(type, direction)
 
   execute "wincmd " . a:direction
   normal! gp
-  let @k = "\r"
-  normal! "kp
+  call chansend(b:terminal_job_id, "\r")
   wincmd p
 endfunction
 
