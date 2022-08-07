@@ -1,4 +1,4 @@
-" Plugin: repl.vim
+" Plugin: repl.nvim
 " Author: Arthur Lui
 " Dependencies: NeoVIM 0.5+
 

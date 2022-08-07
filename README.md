@@ -1,13 +1,13 @@
-# repl.vim
+# repl.nvim
 A basic REPL launcher for NeoVIM.
 
 ## Dependencies
 - NeoVIM 0.5+
 
 # Installation
-If using the plugin manager `plug.vim` add `Plug luiarthur/repl.vim` to the
+If using the plugin manager `plug.vim` add `Plug luiarthur/repl.nvim` to the
 correct location. Similar for other vim plugin managers. If not using a plugin
-manager, just copy `plugin/repl.vim` to `.vim/plugin/` (for vim users). If
+manager, just copy `plugin/repl.nvim` to `.vim/plugin/` (for vim users). If
 using neovim, a plugin manager is recommended.
 
 ## Usage
