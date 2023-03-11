@@ -7,17 +7,17 @@ A basic REPL launcher for NeoVIM.
 # Installation
 If using the plugin manager `plug.vim` add `Plug luiarthur/repl.nvim` to the
 correct location. Similar for other vim plugin managers. If not using a plugin
-manager, just copy `plugin/repl.nvim` to `.vim/plugin/` (for vim users). If
+manager, just copy `plugin/repl.nvim` to `~/.vim/plugin/` (for vim users). If
 using neovim, a plugin manager is recommended.
 
 ## Usage
 1. Open a file in NeoVIM 0.5+
 2. In `Normal` mode, type `Ctrl-k`. If the file extension is of a supported
-   language (see below), then an appropriate REPL will be spawned. If the 
-   language is not supported, or if you prefer a different REPL, open 
-   a terminal in a vim split. I.e. using either `:split | term` (horizontal
-   split) or `:vsplit | term` (vertical split). By default, if a language is not
-   supported, `Ctrl-k` will execute `:split | term`.
+   language (see below), then an appropriate REPL will be spawned. If the
+   language is not supported, or if you prefer a different REPL, open a
+   terminal in a vim split. I.e. using either `:split | term` (horizontal
+   split) or `:vsplit | term` (vertical split). By default, if a language is
+   not supported, `Ctrl-k` will execute `:split | term`.
 3. Navigation (see below)
 
 ## Navigation
@@ -48,8 +48,8 @@ Send current line to REPL on right       | `nmap <C-l> <Plug>ReplSendRight<CR>`
 Send the selected lines to REPL below    | `xmap <C-j> <Plug>ReplSendDownV`
 Send the selected lines to REPL on right | `xmap <C-l> <Plug>ReplSendRightV`
 
-Default key bindings will be used if either `let g:repl_default_key_bindings = 1` is invoked
-in `init.vim` OR `g:repl_default_key_bindings` is not defined.
+Default key bindings will be used if either `let g:repl_default_key_bindings = 1`
+is invoked in `init.vim` OR `g:repl_default_key_bindings` is not defined.
 
 ## Supported Languages
 - Julia (`*.jl`)
