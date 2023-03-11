@@ -1,3 +1,6 @@
+# This repo has been replaced by [repl.vim][1]!
+
+
 # repl.nvim
 A basic REPL launcher for NeoVIM.
 
@@ -57,6 +60,7 @@ is invoked in `init.vim` OR `g:repl_default_key_bindings` is not defined.
 - R (`*.R`)
 
 ## About
-Inspired by [vim-sendtowindow][1].
+Inspired by [vim-sendtowindow][2].
 
-[1]: https://github.com/karoliskoncevicius/vim-sendtowindow.
+[1]: https://github.com/luiarthur/repl.vim
+[2]: https://github.com/karoliskoncevicius/vim-sendtowindow.
