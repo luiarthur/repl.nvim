@@ -1,4 +1,4 @@
-# This repo has been replaced by [repl.vim][1]!
+# This repo has been replaced by [luiarthur/repl.vim][1]!
 
 
 # repl.nvim
